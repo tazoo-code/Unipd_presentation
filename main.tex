@@ -1,8 +1,14 @@
 \documentclass{beamer}
 
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+
 % Use Unipd as theme, with options:
 % - pageofpages: define the separation symbol of the footer page of pages (e.g.: of, di, /, default: of)
 % - logo: position another logo near the Unipd logo in the title page (e.g. department logo), passing the second logo path as option 
+% Use the environment lastframe to add the endframe text
 \usetheme[pageofpages=of]{Unipd}
 
 \title{Presentations using the Unipd theme}
@@ -63,6 +69,17 @@
          \begin{example}
             Sample text for an example
         \end{example}
+    \end{frame}
+
+    
+    \begin{emptyframe}
+        Thank you!
+    \end{emptyframe}
+
+    \appendix
+
+    \begin{frame}{Backup slide}
+        Some additional content
     \end{frame}
     
 \end{document}
