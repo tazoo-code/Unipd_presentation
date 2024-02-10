@@ -61,6 +61,15 @@
 %% Set numbered sections in toc
 \setbeamertemplate{section in toc}[sections numbered]
 
-
+%% Environment for empty red frames
+\newenvironment{emptyframe}{%
+    % disable footline
+    \setbeamertemplate{footline}{}%
+    % set background color
+    \setbeamercolor{background canvas}{bg=red_unipd}%
+    \begin{frame}[environment=emptyframe]%
+    \usebeamercolor[fg]{title}\usebeamerfont{big title}\centering%
+    }{\end{frame}}
+    
 \mode
 <all>
